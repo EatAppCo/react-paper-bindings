@@ -443,8 +443,8 @@ const PaperRenderer = Reconciler({
     )
     if (
       parentInstance instanceof Group &&
-      child instanceof Path &&
-      beforeChild instanceof Path
+      child instanceof Item &&
+      beforeChild instanceof Item
     ) {
       child.insertAbove(beforeChild)
     }
@@ -457,8 +457,8 @@ const PaperRenderer = Reconciler({
     )
     if (
       parentInstance instanceof Group &&
-      child instanceof Path &&
-      beforeChild instanceof Path
+      child instanceof Item &&
+      beforeChild instanceof Item
     ) {
       child.insertAbove(beforeChild)
     }
