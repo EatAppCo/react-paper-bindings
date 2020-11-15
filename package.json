@@ -24,8 +24,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "jest --env=jsdom",
     "prepublish": "yarn build",
-    "prepare": "yarn build",
-    "prepack": "yarn build",
+    "postinstall": "yarn build",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
